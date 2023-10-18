@@ -19,17 +19,17 @@ namespace Company.Function
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
-            //tring name = req.Query["name"];
+            //string name = req.Query["name"];
 
-            //tring requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-            //ynamic data = JsonConvert.DeserializeObject(requestBody);
-            //ame = name ?? data?.name;
+            //string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+            //dynamic data = JsonConvert.DeserializeObject(requestBody);
+            //name = name ?? data?.name;
 
             //string responseMessage = string.IsNullOrEmpty(name)
             //    ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
             //    : $"Hello, {name}. This HTTP triggered function executed successfully.";
 
-            string responseMessage = "Sucess";
+            string responseMessage = "Updated Response Message!";
 
             return new OkObjectResult(responseMessage);
         }
